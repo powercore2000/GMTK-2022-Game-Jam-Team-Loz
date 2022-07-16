@@ -10,12 +10,11 @@ namespace InventorySystem
         [field: SerializeField]
         public Inventory Inventory { get; private set; }
 
-        // Start is called before the first frame update
         void Awake()
         {
             Inventory = new Inventory();
 
-            Inventory.AddDie(new D10_Dice());
+            Inventory.AddDie(new D6_Dice());
         }
 
         // Update is called once per frame
@@ -28,6 +27,9 @@ namespace InventorySystem
     [System.Serializable]
     public class Inventory
     {
+
+        const int maxSlots = 3;
+
         #region Property Fields
         public IReadOnlyCollection<ICustomDie> InventoryAcessor => inventory.AsReadOnly();
 
@@ -36,9 +38,17 @@ namespace InventorySystem
         #endregion
 
         #region Inventory Manipulation Methods
-        public void AddDie(ICustomDie die) {
+        public bool AddDie(ICustomDie die) {
 
-            inventory.Add(die);
+            if(inventory.Count < maxSlots){
+
+                inventory.Add(die);
+                return true;
+            }
+
+            Debug.Log("Inventory full!");
+            return false;
+
         }
 
         public void UseDieAtIndex(int index)

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using InventorySystem;
+using DiceSystem;
+
 
 public class DiceController : MonoBehaviour
 {
@@ -24,11 +27,16 @@ public class DiceController : MonoBehaviour
     {
         Debug.Log("Dice Selected!");
         selected = true;
+        GameObject player = GameObject.FindWithTag("Player");
 
-        // TODO add to inventory
+        bool added = player.GetComponent<InventoryBehaviour>().Inventory.AddDie(new D6_Dice());
 
-        Debug.Log("Destroying Object.");
-        Destroy(gameObject);
+        if(added) {
+
+            Debug.Log("Destroying Object.");
+            Destroy(gameObject);
+
+        }
 
     }
 
