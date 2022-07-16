@@ -23,7 +23,7 @@ namespace InventorySystem
 
         }
     }
-    
+
     [System.Serializable]
     public class Inventory
     {
@@ -40,7 +40,7 @@ namespace InventorySystem
         #region Inventory Manipulation Methods
         public bool AddDie(ICustomDie die) {
 
-            if(inventory.Count < maxSlots){
+            if(inventory.Count < maxSlots) {
 
                 inventory.Add(die);
                 return true;
@@ -56,6 +56,19 @@ namespace InventorySystem
 
             inventory[index].RollResult();
             inventory.RemoveAt(index);
+        }
+
+        public int GetCount() {
+            return inventory.Count;
+        }
+
+        public List<ICustomDie> GetInventory() {
+            return inventory;
+        }
+
+        public void SetInventory(List<ICustomDie> new_inventory) {
+            inventory = new_inventory;
+            return;
         }
         #endregion
     }
