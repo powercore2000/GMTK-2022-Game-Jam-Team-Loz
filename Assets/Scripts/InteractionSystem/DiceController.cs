@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 public class DiceController : MonoBehaviour
 {
@@ -12,7 +12,6 @@ public class DiceController : MonoBehaviour
     void Start()
     {
         Debug.Log("Starting Dice Controller");
-        InteractionSystem.current.OnDiceTriggerSelect += OnDiceSelected;
     }
 
     // Update is called once per frame
@@ -21,19 +20,20 @@ public class DiceController : MonoBehaviour
 
     }
 
-    private void OnDiceSelected()
+    public void OnDiceSelected()
     {
         Debug.Log("Dice Selected!");
         selected = true;
 
         // TODO add to inventory
 
+        Debug.Log("Destroying Object.");
         Destroy(gameObject);
 
     }
 
     private void OnDestroy()
     {
-        InteractionSystem.current.OnDiceTriggerSelect -= OnDiceSelected;
+
     }
 }

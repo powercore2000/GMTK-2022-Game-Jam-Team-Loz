@@ -2,27 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
+namespace InteractionSystem
+{
 public class InteractionSystem : MonoBehaviour
 {
 
-    public static InteractionSystem current;
+    [SerializeField]
+    public UnityEvent OnInteractEvents;
 
-    private void Awake()
+    public void OnMouseDown()
     {
-        current = this;
-    }
+        // TODO only select object if within a certain unobstructed distance from player
+        Debug.Log("Invoking On Interact Events.");
+        OnInteractEvents.Invoke();
 
-
-
-    public event Action OnDiceTriggerSelect;
-
-    public void DiceTriggerSelect()
-    {
-        if (OnDiceTriggerSelect != null)
-        {
-            OnDiceTriggerSelect();
-        }
     }
 
 
@@ -37,4 +32,5 @@ public class InteractionSystem : MonoBehaviour
     {
 
     }
+}
 }
