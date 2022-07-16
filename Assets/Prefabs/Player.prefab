@@ -1899,6 +1899,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5766814629543630876}
+  - component: {fileID: 7105941624467706668}
+  - component: {fileID: 1369347380796881731}
   - component: {fileID: 5821288390798991762}
   - component: {fileID: 5904070055377627888}
   - component: {fileID: 5877572944253855416}
@@ -1928,6 +1930,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7105941624467706668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5768949419930024424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53739b239ee05342abe00a2f1a09bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1369347380796881731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5768949419930024424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87df3cac32b555f4195288161eeb2da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <PlayerStatsInstance>k__BackingField:
+    <Health>k__BackingField: 0
+    <MaxHealth>k__BackingField: 0
+    <IsDead>k__BackingField: 0
 --- !u!54 &5821288390798991762
 Rigidbody:
   m_ObjectHideFlags: 0

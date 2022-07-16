@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace InventorySystem
 {
+    //Monobehaviour wrapper
     public class InventoryBehaviour : MonoBehaviour
     {
         [field: SerializeField]
@@ -27,11 +28,14 @@ namespace InventorySystem
     [System.Serializable]
     public class Inventory
     {
-
+        #region Property Fields
         public IReadOnlyCollection<ICustomDie> InventoryAcessor => inventory.AsReadOnly();
 
+        [SerializeField]
         List<ICustomDie> inventory = new List<ICustomDie>();
+        #endregion
 
+        #region Inventory Manipulation Methods
         public void AddDie(ICustomDie die) {
 
             inventory.Add(die);
@@ -43,7 +47,7 @@ namespace InventorySystem
             inventory[index].RollResult();
             inventory.RemoveAt(index);
         }
-
+        #endregion
     }
 
 
