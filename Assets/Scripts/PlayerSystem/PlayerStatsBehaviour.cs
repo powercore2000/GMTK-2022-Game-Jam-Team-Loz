@@ -80,7 +80,12 @@ namespace PlayerSystems
             Debug.Log("You died!");
             IsDead = true;
             //player.SendMessage("Death");
+
+            if (OnDeath != null)
             OnDeath.Invoke();
+            else {
+                Debug.LogError("OnDeath has no event listeners inside! Check the Unity Inspector or any script which uses PlayerStats or OnDeath...");
+            }
 
 
         }
