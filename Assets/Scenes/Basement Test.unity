@@ -1724,7 +1724,7 @@ PrefabInstance:
     - target: {fileID: 611830351096076400, guid: 92f56bc6a0b9faa4d99f3ecb60667919,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.07
+      value: 11.48
       objectReference: {fileID: 0}
     - target: {fileID: 611830351096076400, guid: 92f56bc6a0b9faa4d99f3ecb60667919,
         type: 3}
@@ -1776,9 +1776,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: 6Sided Variant 16
       objectReference: {fileID: 0}
+    - target: {fileID: 5491206657021712905, guid: 92f56bc6a0b9faa4d99f3ecb60667919,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.7012293
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491206657021712905, guid: 92f56bc6a0b9faa4d99f3ecb60667919,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.1429579
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491206657021712905, guid: 92f56bc6a0b9faa4d99f3ecb60667919,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.054294705
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491206657021712905, guid: 92f56bc6a0b9faa4d99f3ecb60667919,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.005996744
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5934487603230517168, guid: 92f56bc6a0b9faa4d99f3ecb60667919, type: 3}
     - {fileID: 8073544094401019372, guid: 92f56bc6a0b9faa4d99f3ecb60667919, type: 3}
+    - {fileID: 6314700973428064971, guid: 92f56bc6a0b9faa4d99f3ecb60667919, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 92f56bc6a0b9faa4d99f3ecb60667919, type: 3}
 --- !u!4 &902982442 stripped
 Transform:

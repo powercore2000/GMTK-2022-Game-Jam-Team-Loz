@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room 1 Basement.unity
     guid: a44e2591669662c49934dda42d785f27
+  - enabled: 1
+    path: Assets/Scenes/CompletionScreen.unity
+    guid: 061bdb120bf263a40a973fefa897b7e8
   m_configObjects: {}
