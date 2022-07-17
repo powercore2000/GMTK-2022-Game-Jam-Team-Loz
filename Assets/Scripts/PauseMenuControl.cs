@@ -18,6 +18,6 @@ public class PauseMenuControl : MonoBehaviour
     public void SaveExit()
     {
         //call save method
-        //load main menu
+        //load main menu scene
     }
 }
