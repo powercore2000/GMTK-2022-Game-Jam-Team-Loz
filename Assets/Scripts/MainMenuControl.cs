@@ -5,18 +5,13 @@ using EnviromentSystems.SceneLoading;
 
 public class MainMenuControl : MonoBehaviour
 {
-    public GameObject sceneMgr;
-    public SceneManagerBehaviour sceneMgrBhv;
 
-    public void Start()
-    {
-        sceneMgr = GameObject.Find("SceneManager");
-        sceneMgrBhv = sceneMgr.GetComponent<SceneManagerBehaviour>();
-    }
+    [SerializeField]
+    SceneManagerBehaviour sceneMgrBhv;
 
-    public void StartNewGame()
+    public void StartNewGame(int levelIndex)
     {
-        sceneMgrBhv.LoadNewLevelByIndex(1);
+
         //if save data exists
         //display pop-up window "This will delete existing save data. Continue?"
         //if yes
@@ -26,12 +21,13 @@ public class MainMenuControl : MonoBehaviour
         //close dialog box
         //else
         //scene transfer to first level
+        sceneMgrBhv.LoadNewLevelByIndex(levelIndex);
 
     }
 
-    public void LoadGame()
+    public void LoadGame(int levelIndex)
     {
-        //load last level player was on
+        sceneMgrBhv.LoadNewLevelByIndex(levelIndex);
     }
 
     public void ShowCredits()
