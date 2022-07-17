@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 216303374}
   - component: {fileID: 216303373}
   m_Layer: 5
-  m_Name: PersonName (10)
+  m_Name: Attributions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1943494683}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -408,7 +408,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: prab-dev - Music
 --- !u!222 &229471737
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -488,7 +488,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Zia Reynolds - Project Lead
 --- !u!222 &312617596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -658,7 +658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Ricardo M - Design & Programming
 --- !u!222 &492757683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -964,7 +964,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Harry Petch - Support Programming
 --- !u!222 &635008922
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1120,7 +1120,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Aya - Game Design Lead
 --- !u!222 &809600677
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1507,7 +1507,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Danielle K - Art
 --- !u!222 &942597896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1604,86 +1604,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!1 &1075684860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1075684861}
-  - component: {fileID: 1075684863}
-  - component: {fileID: 1075684862}
-  m_Layer: 5
-  m_Name: PersonName (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1075684861
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075684860}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1943494683}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 359.87518, y: -202.21}
-  m_SizeDelta: {x: 723.3371, y: 60.2148}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1075684862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075684860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.96180403, b: 0.4575472, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 2ca35b88d682a442a8cb26b55c752de6, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 48
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: Name Here - Role
---- !u!222 &1075684863
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075684860}
-  m_CullTransparentMesh: 1
 --- !u!1 &1127205558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,7 +1827,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Kemtimus Sign - Art Lead
 --- !u!222 &1376770517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2150,7 +2070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Andrej - Art
 --- !u!222 &1445287836
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2262,8 +2182,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 183}
-  m_SizeDelta: {x: 419.1414, y: 78.589}
+  m_AnchoredPosition: {x: 0, y: 201.5005}
+  m_SizeDelta: {x: 633.6478, y: 111.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556896150
 MonoBehaviour:
@@ -2286,19 +2206,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c038a4f14f5ef4c63807204942dc0a89, type: 3}
-    m_FontSize: 48
+    m_Font: {fileID: 12800000, guid: 2ca35b88d682a442a8cb26b55c752de6, type: 3}
+    m_FontSize: 76
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 48
+    m_MaxSize: 76
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: <Game Title>
+  m_Text: Where is the Witch?
 --- !u!222 &1556896151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2942,7 +2862,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1943494683}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3152,7 +3072,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Name Here - Role
+  m_Text: Powercore2000 - Programming Lead
 --- !u!222 &1858544042
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3397,7 +3317,6 @@ RectTransform:
   - {fileID: 492757681}
   - {fileID: 635008920}
   - {fileID: 229471735}
-  - {fileID: 1075684861}
   - {fileID: 1774857891}
   - {fileID: 216303372}
   m_Father: {fileID: 0}
