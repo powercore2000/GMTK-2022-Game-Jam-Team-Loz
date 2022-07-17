@@ -317,7 +317,10 @@ MonoBehaviour:
   Plugins: []
   MasterBanks: []
   Banks: []
-  BanksToLoad: []
+  BanksToLoad:
+  - Master
+  - Master.strings
+  - Music
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
   AndroidUseOBB: 0

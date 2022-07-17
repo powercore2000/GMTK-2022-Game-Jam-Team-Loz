@@ -17,7 +17,9 @@ namespace EnviromentSystems.SceneLoading
 
         public void LoadTargetScene() {
 
-            SceneManagerBehaviour.Instance.LoadNewLevelByIndex(targetIdx);
+            if (targetIdx >= 0) SceneManagerBehaviour.Instance.LoadNewLevelByIndex(targetIdx);
+
+            else SceneManagerBehaviour.Instance.ReloadCurrentScene();
         }
 
 
