@@ -19,6 +19,8 @@ namespace EnviromentSystems.SceneLoading
 
         static bool isLoadingInProgress;
         public static bool IsLoadingInProgress => isLoadingInProgress;
+
+        public static SceneManagerBehaviour Instance { get; private set; }
         #endregion
 
 
@@ -33,6 +35,11 @@ namespace EnviromentSystems.SceneLoading
 
 
         #region MonoBehaviour
+
+        private void Awake()
+        {
+            Instance = this;
+        }
         void Start()
         {
             if (isLoadingInProgress) {
