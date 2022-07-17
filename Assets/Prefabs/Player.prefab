@@ -1728,6 +1728,9 @@ MonoBehaviour:
     <Health>k__BackingField: 0
     <MaxHealth>k__BackingField: 0
     <IsDead>k__BackingField: 0
+    OnDeath:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &969756852620991893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,9 +1941,10 @@ GameObject:
   - component: {fileID: 5877572944253855416}
   - component: {fileID: 5881143950744173036}
   - component: {fileID: 5768949419930024425}
+  - component: {fileID: 8915541630466856749}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1991,6 +1995,46 @@ MonoBehaviour:
     <Health>k__BackingField: 0
     <MaxHealth>k__BackingField: 0
     <IsDead>k__BackingField: 0
+    OnDeath:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 875070972081455987}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: isDead
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8915541630466856749}
+          m_TargetAssemblyTypeName: EnviromentSystems.SceneLoading.PlayerRespawnBehaviour,
+            Assembly-CSharp
+          m_MethodName: Respawn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 5768949419930024425}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &8202620347694932125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2004,7 +2048,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1791498057426116083}
-  diceTossPrefab: {fileID: 0}
+  diceTossPrefab: {fileID: 5264364513677090870, guid: 37377a4554d90334f9a5a4dffcbbf450,
+    type: 3}
 --- !u!54 &5821288390798991762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2112,6 +2157,19 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   _walkSpeed: 2.5
   _runSpeed: 5
+--- !u!114 &8915541630466856749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5768949419930024424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e57ce4edbe44e4288c37d22852cf69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
 --- !u!1 &6269739659450192668
 GameObject:
   m_ObjectHideFlags: 0

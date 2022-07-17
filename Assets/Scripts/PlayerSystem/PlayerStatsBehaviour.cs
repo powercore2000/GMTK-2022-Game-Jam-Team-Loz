@@ -1,5 +1,7 @@
 using DiceSystem;
 using UnityEngine;
+using UnityEngine.Events;
+using System.Collections;
 
 namespace PlayerSystems
 {
@@ -19,6 +21,17 @@ namespace PlayerSystems
             PlayerStatsInstance.SetCharacterStats(10);
             PlayerStatsInstance.player = gameObject;
         }
+
+        private void Start()
+        {
+            StartCoroutine(Death());
+        }
+
+        IEnumerator Death() {
+
+            yield return new WaitForSeconds(1);
+            PlayerStatsInstance.TakeDamage(100);
+        }
         #endregion
 
 
@@ -36,6 +49,9 @@ namespace PlayerSystems
 
         [field: SerializeField]
         public bool IsDead { get; private set; }
+
+        [SerializeField]
+        UnityEvent OnDeath;
 
         [field: SerializeField]
         public ICustomDie PersonalDie { get; private set; }
@@ -61,7 +77,10 @@ namespace PlayerSystems
         {
             Debug.Log("You died!");
             IsDead = true;
-            player.SendMessage("Death");
+            //player.SendMessage("Death");
+            OnDeath.Invoke();
+
+
         }
 
         //Call when player respawn will call all respawn functions on the player
