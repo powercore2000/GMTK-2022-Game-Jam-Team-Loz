@@ -10,6 +10,9 @@ namespace DiceThrowing
 
         [SerializeField]
         float speed = 10;
+
+        [SerializeField]
+        float maxSpeed = 10;
         [SerializeField]
         float lifetime = 2;
         Rigidbody rigidBody;
@@ -23,6 +26,8 @@ namespace DiceThrowing
         // Update is called once per frame
         void FixedUpdate()
         {
+            if (rigidBody.velocity.magnitude >= maxSpeed) return;
+
             rigidBody.AddForce(transform.forward * speed, ForceMode.VelocityChange);
         }
 
