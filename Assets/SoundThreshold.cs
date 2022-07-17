@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SoundThreshold : MonoBehaviour
 {
-
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
 
 }
