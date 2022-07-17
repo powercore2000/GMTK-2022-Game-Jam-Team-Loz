@@ -26,14 +26,10 @@ namespace PlayerSystems
 
         private void Start()
         {
-            StartCoroutine(Death());
+
         }
 
-        IEnumerator Death() {
 
-            yield return new WaitForSeconds(1);
-            PlayerStatsInstance.TakeDamage(100);
-        }
         #endregion
 
 
