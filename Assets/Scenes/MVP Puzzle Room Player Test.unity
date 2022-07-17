@@ -823,6 +823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344091324}
   - component: {fileID: 1344091323}
+  - component: {fileID: 1344091325}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -860,6 +861,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1344091325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344091322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3341432ce7483c4aa6795ef8b4e6d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1558294398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,6 +1208,11 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 100713647}
+    - target: {fileID: 8915541630466856749, guid: 8dcffc126bec45a4f953148b4dd4df9c,
+        type: 3}
+      propertyPath: delay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dcffc126bec45a4f953148b4dd4df9c, type: 3}
 --- !u!4 &5469101222925044084 stripped
