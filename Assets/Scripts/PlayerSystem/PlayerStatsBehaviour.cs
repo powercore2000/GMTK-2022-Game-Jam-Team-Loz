@@ -24,11 +24,6 @@ namespace PlayerSystems
             PlayerStatsInstance.player = gameObject;
         }
 
-        private void Start()
-        {
-
-        }
-
 
         #endregion
 
