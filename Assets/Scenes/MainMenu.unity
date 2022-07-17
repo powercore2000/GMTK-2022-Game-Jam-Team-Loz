@@ -1139,6 +1139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 868203159}
   - component: {fileID: 868203160}
+  - component: {fileID: 868203161}
   m_Layer: 5
   m_Name: SoundSlider
   m_TagString: Untagged
@@ -1220,7 +1221,33 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 868203161}
+        m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
+        m_MethodName: VolSliderChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &868203161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868203158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689cda241a134a345bb6ec5fa805bbdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paramName: MusicVol
+  musicManager: {fileID: 1000962743}
 --- !u!1 &901023316
 GameObject:
   m_ObjectHideFlags: 0
