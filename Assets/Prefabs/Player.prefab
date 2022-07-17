@@ -2126,12 +2126,12 @@ MonoBehaviour:
   _canCrouch: 1
   _standingHeight: 2
   _crouchingHeight: 1
-  _baseJumpHeight: 1.5
+  _baseJumpHeight: 1
   _extraJumpTime: 0.5
   _extraJumpPower: 25
   _jumpPreGroundedToleranceTime: 0.15
   _jumpPostGroundedToleranceTime: 0.15
-  _maxMidAirJumps: 1
+  _maxMidAirJumps: 0
   _useRootMotion: 0
   _rootMotionRotation: 0
   playerCamera: {fileID: 0}
