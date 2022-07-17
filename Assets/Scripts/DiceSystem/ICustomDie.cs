@@ -7,11 +7,10 @@ namespace DiceSystem
 {
     public interface ICustomDie
     {
+        string DieName { get; }
         int[] RollTableValues { get; }
         GameObject DicePrefab { get; }
 
-        event EventHandler OnDieRoll;
-        event EventHandler OnDieRollVFX;
         public int RollResult();
 
 

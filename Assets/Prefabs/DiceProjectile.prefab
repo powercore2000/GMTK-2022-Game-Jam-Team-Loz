@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2355862909348212614}
   - component: {fileID: 4142601056506426597}
   m_Layer: 0
-  m_Name: Dice Test
+  m_Name: DiceProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
