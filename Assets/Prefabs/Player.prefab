@@ -1655,7 +1655,6 @@ GameObject:
   - component: {fileID: 965536080465831121}
   - component: {fileID: 875070972081455987}
   - component: {fileID: 875070972081455988}
-  - component: {fileID: 875070972081455989}
   m_Layer: 0
   m_Name: Character_Male_Face_01
   m_TagString: Untagged
@@ -1712,25 +1711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8220ce0fa80a49849a394145ade07766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &875070972081455989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969710560142987379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87df3cac32b555f4195288161eeb2da8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <PlayerStatsInstance>k__BackingField:
-    <Health>k__BackingField: 0
-    <MaxHealth>k__BackingField: 0
-    <IsDead>k__BackingField: 0
-    OnDeath:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &969756852620991893
 GameObject:
   m_ObjectHideFlags: 0

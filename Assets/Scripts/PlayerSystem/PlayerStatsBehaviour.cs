@@ -17,7 +17,9 @@ namespace PlayerSystems
         //Initalizes the players stats to default values
         private void Awake()
         {
-            PlayerStatsInstance = new PlayerStats();
+            //This creates a new blank player stats instance, overwriting any changes made in the Inspector!
+            //This is why OnDeath was doing nothing - it would be cleared at runtime
+            //PlayerStatsInstance = new PlayerStats();
             PlayerStatsInstance.SetCharacterStats(10);
             PlayerStatsInstance.player = gameObject;
         }
@@ -78,7 +80,12 @@ namespace PlayerSystems
             Debug.Log("You died!");
             IsDead = true;
             //player.SendMessage("Death");
+
+            if (OnDeath != null)
             OnDeath.Invoke();
+            else {
+                Debug.LogError("OnDeath has no event listeners inside! Check the Unity Inspector or any script which uses PlayerStats or OnDeath...");
+            }
 
 
         }
