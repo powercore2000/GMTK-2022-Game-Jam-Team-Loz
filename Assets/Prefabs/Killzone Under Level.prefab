@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddd25dd822dcbf4ab1fa2118b436b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetIdx: 1
+  targetIdx: -1
 --- !u!114 &820067581046266874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +76,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   OnInputInsideTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExitTrigger:
     m_PersistentCalls:
       m_Calls: []
 --- !u!65 &820067581046266875
