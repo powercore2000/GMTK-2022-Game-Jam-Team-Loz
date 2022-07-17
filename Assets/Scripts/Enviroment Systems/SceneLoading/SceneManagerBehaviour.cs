@@ -109,6 +109,15 @@ namespace EnviromentSystems.SceneLoading
 
         }
 
+        public void ReloadZone()
+        {
+
+            targetZoneIndex = SceneManager.GetActiveScene().buildIndex;
+            StartFadeTransition();
+
+
+        }
+
         public void StartFadeTransition()
         {
             if (!disableTransitionFade)

@@ -4,7 +4,7 @@ using UnityEngine;
 using DiceSystem;
 
 namespace DiceBehaviour{
-    public class CustomDiceManagerBehaviour : MonoBehaviour
+    public class DiceManagerBehaviour : MonoBehaviour
     {
         static bool addedDice;
         // Start is called before the first frame update
