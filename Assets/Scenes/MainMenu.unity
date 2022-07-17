@@ -504,6 +504,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7564890195328838305, guid: 24bd6643de6890646bf3bfd5579a41f2,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564890195328838305, guid: 24bd6643de6890646bf3bfd5579a41f2,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564890195328838305, guid: 24bd6643de6890646bf3bfd5579a41f2,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564890195328838305, guid: 24bd6643de6890646bf3bfd5579a41f2,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 720
+      objectReference: {fileID: 0}
     - target: {fileID: 7962244380670344049, guid: 24bd6643de6890646bf3bfd5579a41f2,
         type: 3}
       propertyPath: m_RootOrder
@@ -564,7 +584,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Manager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4034152386489918355, guid: 24bd6643de6890646bf3bfd5579a41f2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 24bd6643de6890646bf3bfd5579a41f2, type: 3}
 --- !u!1 &492757680
 GameObject:
@@ -1278,7 +1299,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -3
   m_TargetDisplay: 0
 --- !u!224 &901023320
 RectTransform:
