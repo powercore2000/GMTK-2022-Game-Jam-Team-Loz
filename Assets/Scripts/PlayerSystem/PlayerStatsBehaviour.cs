@@ -17,7 +17,9 @@ namespace PlayerSystems
         //Initalizes the players stats to default values
         private void Awake()
         {
-            PlayerStatsInstance = new PlayerStats();
+            //This creates a new blank player stats instance, overwriting any changes made in the Inspector!
+            //This is why OnDeath was doing nothing - it would be cleared at runtime
+            //PlayerStatsInstance = new PlayerStats();
             PlayerStatsInstance.SetCharacterStats(10);
             PlayerStatsInstance.player = gameObject;
         }
