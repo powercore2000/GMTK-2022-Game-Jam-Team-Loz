@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 using System.Linq;
+using System;
 
 //Automated tool to assign textures 
 public class CreateMaterialsForTextures : Editor
@@ -26,7 +27,7 @@ public class CreateMaterialsForTextures : Editor
             foreach(var tex in textures)
             {
                 string type = AssetDatabase.GetAssetPath(tex);
-                type = type.Substring(0,path.FirstIndexOf("_"))+".mat";
+                type = type.Substring(0,path.IndexOf("_"))+".mat";
                 if (AssetDatabase.LoadAssetAtPath(path,typeof(Material)) != null)
                 {
                     Debug.LogWarning("Can't create material, it already exists: " + path);
