@@ -11,13 +11,15 @@ namespace DiceSystem
 
         public GameObject DicePrefab { get; private set; }
 
+        public string DieName { get; private set; }
+
         public event EventHandler OnDieRoll;
         public event EventHandler OnDieRollVFX;
 
         public D4_Dice()
         {
 
-
+            DieName = "D4";
             RollTableValues = new int[] { 1, 2, 3, 4 };
 
 

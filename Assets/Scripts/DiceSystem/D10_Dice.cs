@@ -9,7 +9,7 @@ namespace DiceSystem
     public class D10_Dice : ICustomDie
     {
         public int[] RollTableValues { get; private set; }
-
+        public string DieName => "D10";
         public GameObject DicePrefab { get; private set; }
 
         public event EventHandler OnDieRoll;
