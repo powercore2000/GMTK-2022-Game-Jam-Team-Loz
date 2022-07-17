@@ -46,4 +46,8 @@ public class MainMenuControl : MonoBehaviour
         menuCanvas.SetActive(true);
         creditsCanvas.SetActive(false);
     }
+
+    public void Quit(){
+        Application.Quit();
+    }
 }
