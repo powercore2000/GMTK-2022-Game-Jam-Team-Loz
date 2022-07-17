@@ -8,6 +8,8 @@ public class MainMenuControl : MonoBehaviour
 
     [SerializeField]
     SceneManagerBehaviour sceneMgrBhv;
+    [SerializeField] private GameObject menuCanvas;
+    [SerializeField] private GameObject creditsCanvas;
 
     public void StartNewGame(int levelIndex)
     {
@@ -32,6 +34,16 @@ public class MainMenuControl : MonoBehaviour
 
     public void ShowCredits()
     {
-        //load a scene in which the game credits are shown
+        //Hide everything in the menu canvas and show a different canvas
+        //DOES THIS VIA GAMEOBJECT.ACTIVE - MIGHT HAVE ISSUES ON CONTROLLERS MAYBE, I'M NOT SURE
+        //HOPEFULLY NOT, BUT IF SO, IT MIGHT BE THIS
+        menuCanvas.SetActive(false);
+        creditsCanvas.SetActive(true);
+    }
+
+    public void ShowTitle()
+    {
+        menuCanvas.SetActive(true);
+        creditsCanvas.SetActive(false);
     }
 }
