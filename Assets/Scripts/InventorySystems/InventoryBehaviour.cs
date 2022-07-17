@@ -57,6 +57,11 @@ namespace InventorySystem
             inventory[index].RollResult();
             inventory.RemoveAt(index);
         }
+
+        public void EmptyInventory(){
+            inventory.Clear();
+            Debug.Log("Inventory is now empty");
+        }
         #endregion
     }
 

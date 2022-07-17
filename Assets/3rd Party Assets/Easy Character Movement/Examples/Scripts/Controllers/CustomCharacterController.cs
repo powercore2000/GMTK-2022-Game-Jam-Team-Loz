@@ -30,6 +30,10 @@ namespace ECM.Examples
         [SerializeField]
         private float _runSpeed = 5.0f;
 
+        private bool isDead;
+
+        private Vector3 respawnPos;
+
         #endregion
 
         #region PROPERTIES
@@ -122,6 +126,8 @@ namespace ECM.Examples
 
             animator.SetBool("Crouch", isCrouching);
 
+            animator.SetBool("Dead", isDead);
+
             if (!movement.isGrounded)
                 animator.SetFloat("Jump", movement.velocity.y, 0.1f, Time.deltaTime);
         }
@@ -133,6 +139,19 @@ namespace ECM.Examples
 
         protected override void HandleInput()
         {
+            //shady death button for aya's testing
+            if (Input.GetKeyDown(KeyCode.K)){
+                GetComponent<PlayerSystems.PlayerStatsBehaviour>().PlayerStatsInstance.Death();
+            }
+
+            //shady respawn button, same as abbove
+            if (Input.GetKeyDown(KeyCode.L)){
+                GetComponent<PlayerSystems.PlayerStatsBehaviour>().PlayerStatsInstance.Respawn();
+            }
+
+            //Skip if dead, and set movement to 0
+            if(isDead){moveDirection = new Vector3(0,0,0); return;}
+
             // Handle your custom input here...
 
             moveDirection = new Vector3
@@ -148,10 +167,39 @@ namespace ECM.Examples
 
             crouch = Input.GetKey(KeyCode.C);
 
-
             // Transform moveDirection vector to be relative to camera view direction
 
             moveDirection = moveDirection.relativeTo(playerCamera);
+
+        }
+        #endregion
+
+
+        #region DEATH/RESPAWN TASKS
+
+        //Call when player dies
+        public void Death()
+        {
+            Debug.Log("Controller also died");
+            isDead = true;
+            
+            //Empty inventory on death
+            GetComponent<InventorySystem.InventoryBehaviour>().Inventory.EmptyInventory();
+        }
+
+        //Call on respawn
+        public void  Respawn(){
+            isDead = false;
+            transform.position = respawnPos;
+
+            //Add back empty dice
+            //GetComponent<InventorySystem.InventoryBehaviour>().Inventory.AddDie();
+        }
+
+        //Call when changing respawn point
+        public void setRespawnPoint (Vector3 newPos){
+            respawnPos = newPos;
+            Debug.Log("new reapwn pos" + newPos);
         }
 
         #endregion
