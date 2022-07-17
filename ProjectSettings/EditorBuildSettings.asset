@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8797376b854f2bd4dac1bcfccdd227b1
   - enabled: 1
-    path: Assets/Scenes/MVP Puzzle Room Player Test.unity
-    guid: a75b990a8b891a7478d2ca31dad8f256
+    path: Assets/Scenes/Room 1 Basement.unity
+    guid: a44e2591669662c49934dda42d785f27
   m_configObjects: {}
