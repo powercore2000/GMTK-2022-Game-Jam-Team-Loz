@@ -58,6 +58,11 @@ namespace InventorySystem
             inventory.RemoveAt(index);
         }
 
+        public void EmptyInventory(){
+            inventory.Clear();
+            Debug.Log("Inventory is now empty");
+        }
+        
         public int GetCount() {
             return inventory.Count;
         }
